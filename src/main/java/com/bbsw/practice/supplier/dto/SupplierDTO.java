@@ -6,9 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SupplierDTO {
-    Long id;
-
     String name;
-
     String country;
 }
