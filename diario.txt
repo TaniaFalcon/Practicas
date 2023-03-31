@@ -1,0 +1,77 @@
+Día 1  
+
+Lectura de los estándares y patrones que sigue la empresa en la codificación. 
+
+Día 2 
+
+Práctica a realizar en dos semanas donde se realizará una API Rest con Spring Boot además de la interfaz con React.  
+
+Busqueda completa de cómo es la realización de una API Rest con Spring Boot, así conseguir las bases para al día siguiente empezar con la codificación. 
+
+Día 3 
+
+Creación de toda la estructura del código donde intervienen los Data y los DTO, además de buscar información de cómo se relacionan las tablas con las anotaciones de Spring Boot. 
+
+Con ello se consigue toda la estructura básica de tablas relacionadas entre sí (Data’s) y los DTO. 
+
+Día 4 
+
+Creación de los métodos necesarios para convertir DTO a Data y viceversa, ya que es un proceso que se realiza a menudo ya que lo que se recibe son DTO’s y en la tabla se guardan Data’s.  
+
+Búsqueda de información sobre el repositorio y los métodos basados en convención de las query’s. Implementación de los métodos necesarios con basados en esta convención. 
+
+Creación de los métodos solicitados en la práctica. Se consigue los métodos de listar todos los item’s, listarlos en base a su estado, creación, modificación y desactivar. 
+
+Ninguno de los métodos se prueba con el Postman. 
+
+Día 5  
+
+Búsqueda sobre el login en Spring Boot. Creación de los métodos necesarios para el login a falta de comprobarlo con el Postman. 
+
+Búsqueda sobre controller. Creación del controller de item con todos los métodos necesarios. 
+
+Mejoras en el código de convertir DTO a Data y viceversa, ya que es mejor la utilización del modelMapper para las conversiones. 
+
+Se insertan datos en diferentes tablas para la comprobación en el Postman. Se consigue con ello que el método list() funcione con todas las relaciones de la tabla, a falta de comprobar la relación con la tabla supplier. 
+
+Creación del controller del user para la comprobación del login en el Postman. Falta la comprobación en el Postman. 
+
+Día 6 
+
+Modificación en el método list() para que muestre correctamente todos los item’s con sus relaciones, ya que el modelMapper no cogía todas las listas del objeto item, además de añadir la tabla desactive y sus relaciones. 
+
+Modificaciones de las relaciones con la tabla desactive ya que faltaban las anotaciones json para que funcionara correctamente. 
+
+Comprobación del método list() donde ya funciona correctamente. 
+
+Comprobación del método login(). Tras la comprobación funciona correctamente. 
+
+Modificación del método listByState() para que tras filtrar todos los item’s por el state con el parámetro que se pasa, muestre correctamente el listado de item’s y sus relaciones con las otras tablas.  
+
+Comprobación exitosa del método listByState(). 
+
+Modificación del método create() porque no se han tenido en cuenta múltiples variables con las tablas relacionadas, ello a derivado en creación de nuevos métodos en la tabla item para añadir price reduction y supplier. 
+
+Modificación del método create() terminada a falta de comprobación en el postman. 
+
+Modificación del método modify() porque no se han tenido en cuenta múltiples variables con las tablas relacionadas. 
+
+Tras intentar modificar el método modify() se ha comprobado que se necesitaba un nuevo metodo el repository de supplier. Falta terminar la modificación con un modelMapper en el price reduction e incluir las líneas de código necesarias para modificar el supplier del item. 
+
+Día 7 
+
+Unificar los métodos create() y modify() en createUpdate(), con todas las especificaciones a tener en cuenta en el enunciado de la práctica, además de las relaciones entre las tablas. 
+
+Quitar la relación que tiene item con user para que asi solo se guarde el username, y no todo el user al completo (con la contraseña). 
+
+Con todos estos cambios, mejorar el método desactive() para terminar la API y comprobarla al completo. 
+
+Tras el intento de comprobación en el método createUpdate() da fallo y se intenta solucionar. 
+
+Se modifica las líneas donde están las listas de price reduction y supplier para que se rellene correctamente en la tabla con todos los datos. 
+
+Se vuelve a comprobar el método donde ya funciona correctamente. 
+
+Se comprueba el método desactive() donde falla. Tras revisar el código se cambia la manera en la que trata la variable username donde ahora simplemente comprueba si existe ese username a través del repositorio de user y tras ello lo guarda en el desactive data.
+
+ https://es.reactjs.org/docs/create-a-new-react-app.html e instalar el node.js
